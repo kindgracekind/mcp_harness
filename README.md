@@ -1,6 +1,6 @@
 # mcp harness
 
-Demonstration of using MCP servers to test agents.
+Demonstration of using MCP servers to test agents. Companion to [this blog post](https://gracekind.net/blog/mcpblackbox).
 
 ## Usage
 
