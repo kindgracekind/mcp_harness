@@ -18,7 +18,7 @@ async def perform_tasks():
     ):
         async with ClientSession(read_stream, write_stream) as session:
             await session.initialize()
-            prompt = get_prompt(session, TASK_PROMPT_NAME)
+            prompt = await get_prompt(session, TASK_PROMPT_NAME)
             multitool = await Multitool.create(session)
             conversation = Conversation(tools=multitool.get_tools_json())
             res = conversation.add_message(prompt)
